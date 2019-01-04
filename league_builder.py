@@ -5,6 +5,7 @@ import datetime
 experienced = []
 inexperienced = []
 teams = {}
+now = datetime.datetime.now()
 
 
 def read_and_sort():
@@ -67,10 +68,15 @@ def write_letter():
             # Create template for data retrieved from looping to be stored. Write letter.
             with open("{}.txt".format(player[0]), "a") as file:
                 file.write(f"""Dear {player[2]},\n
-   {player[0][1]} has been drafted into the {name} team for this year’s Youth Soccer League.
+   {player[0]} has been drafted into the {name} team for this year’s Youth Soccer League.
    First practice will be on {now.strftime("%Y-%m-%d %H:%M")}.\n
-   See you all there!"""
+   See you all there,
+
+                               Yours Truly,
+                                        Ekene Osubor
+                                        Youth Soccer Coordinator!"""
 )
+
 
 
 # Use Dunder main to prevent code from running as an import.
