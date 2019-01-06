@@ -70,11 +70,11 @@ def write_letter():
                 file.write(f"""Dear {player[2]},\n
    {player[0]} has been drafted into the {name} team for this year’s Youth Soccer League.
    First practice will be on {now.strftime("%Y-%m-%d %H:%M")}.\n
-   See you all there,
+   See you all there.
 
-                               Yours Truly,
-                                        Ekene Osubor
-                                        Youth Soccer Coordinator!"""
+                                                       Yours Truly,
+                                                                Ekene Osubor
+                                                                Youth Soccer Coordinator!"""
 )
 
 
